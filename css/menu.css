@@ -1,0 +1,156 @@
+/* =========================================
+   MENU LATERAL
+========================================= */
+
+.menu-frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 280px;
+    height: 100vh;
+
+    border: none;
+
+    transform: translateX(-100%);
+    transition: 0.3s ease;
+
+    z-index: 1000;
+}
+
+.menu-frame.open {
+    transform: translateX(0);
+}
+
+.menu-frame.closed {
+    width: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+
+    height: 100vh;
+
+    background: rgba(255, 255, 255, 0.85);
+
+    backdrop-filter: blur(10px);
+
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+
+    padding: 30px 20px;
+
+    transition: 0.3s;
+}
+
+/* Título */
+.sidebar h2,
+.sidebar h3 {
+    color: #ea580c;
+
+    margin-bottom: 40px;
+
+    font-size: 2rem;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+/* Itens */
+.menu-item {
+    display: block;
+
+    background: transparent;
+
+    border: none;
+
+    color: #374151;
+
+    padding: 14px 16px;
+
+    border-radius: 12px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    font-size: 1rem;
+
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background: rgba(59, 130, 246, 0.08);
+
+    color: #2563eb;
+}
+
+.menu-item.active {
+    background: #2563eb;
+
+    color: white;
+
+    font-weight: 600;
+}
+
+/* Botão ☰ */
+.menu-toggle {
+    position: fixed;
+
+    top: 20px;
+    left: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    color: #2563eb;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    z-index: 2000;
+
+    transition: 0.3s;
+}
+
+.menu-toggle:hover {
+    background: #2563eb;
+
+    color: white;
+}
+
+/* Voltar */
+.back-home {
+    display: inline-block;
+
+    margin-bottom: 30px;
+
+    color: #4b5563;
+
+    text-decoration: none;
+
+    font-size: 0.95rem;
+
+    transition: 0.3s;
+}
+
+.back-home:hover {
+    color: #2563eb;
+
+    transform: translateX(-3px);
+}
