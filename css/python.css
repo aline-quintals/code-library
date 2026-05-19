@@ -1,18 +1,18 @@
 /* =========================================
-   FUNDO JAVA
+   FUNDO PYTHON
 ========================================= */
 
 .background {
     background:
         radial-gradient(
             circle at top left,
-            rgba(59, 130, 246, 0.08),
+            rgba(59, 130, 246, 0.10),
             transparent 30%
         ),
 
         radial-gradient(
             circle at bottom right,
-            rgba(249, 115, 22, 0.10),
+            rgba(234, 179, 8, 0.15),
             transparent 30%
         );
 }
@@ -22,7 +22,7 @@
 ========================================= */
 
 .content-header h1 {
-    color: #ea580c;
+    color: #3776ab;
 }
 
 /* =========================================
@@ -31,7 +31,7 @@
 
 .info-card,
 .snippet-card {
-    border: 1px solid rgba(249, 115, 22, 0.08);
+    border: 1px solid rgba(234, 179, 8, 0.10);
 }
 
 /* =========================================
@@ -41,7 +41,7 @@
 .info-card h2,
 .snippet-top h2,
 .topic-box h3 {
-    color: #ea580c;
+    color: #3776ab;
 }
 
 /* =========================================
@@ -49,7 +49,7 @@
 ========================================= */
 
 .info-card li {
-    background: rgba(249, 115, 22, 0.08);
+    background: rgba(234, 179, 8, 0.12);
 }
 
 /* =========================================
@@ -57,14 +57,14 @@
 ========================================= */
 
 .topic-box {
-    background: rgba(249, 250, 251, 0.9);
+    background: rgba(255, 255, 255, 0.9);
 
-    border: 1px solid rgba(249, 115, 22, 0.08);
+    border: 1px solid rgba(234, 179, 8, 0.10);
 }
 
 .topic-box:hover {
     box-shadow:
-        0 10px 20px rgba(249, 115, 22, 0.12);
+        0 10px 20px rgba(234, 179, 8, 0.15);
 }
 
 /* =========================================
@@ -72,11 +72,11 @@
 ========================================= */
 
 .advantage-item {
-    background: rgba(249, 115, 22, 0.08);
+    background: rgba(234, 179, 8, 0.10);
 }
 
 .advantage-item:hover {
-    background: rgba(249, 115, 22, 0.14);
+    background: rgba(234, 179, 8, 0.18);
 }
 
 /* =========================================
@@ -86,14 +86,14 @@
 .copy-btn {
     background: linear-gradient(
         135deg,
-        #ea580c,
-        #f97316
+        #3776ab,
+        #2563eb
     );
 }
 
 .copy-btn:hover {
     box-shadow:
-        0 8px 20px rgba(249, 115, 22, 0.25);
+        0 8px 20px rgba(37, 99, 235, 0.25);
 }
 
 /* =========================================
@@ -101,5 +101,5 @@
 ========================================= */
 
 pre {
-    background: #0f172a;
+    background: #1e293b;
 }

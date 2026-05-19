@@ -4,73 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Java | CodeLibrary</title>
+    <title>Variáveis Java | CodeLibrary</title>
 
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/java.css">
     <link rel="stylesheet" href="../../css/menu.css">
 
-    <!-- Fonte -->
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
     <div class="background"></div>
+
+    <!-- Botão Menu -->
     <button class="menu-toggle" id="menuToggle">
-    ☰
+        ☰
     </button>
 
-    <!--Menu-->
+    <!-- Menu -->
     <iframe 
-        src="menu.html"
+        src="menu.html?page=variaveis"
         class="menu-frame">
     </iframe>
 
     <!-- Conteúdo -->
     <main class="content" id="content">
 
-        <div class="content-header">
-            <h1>Variáveis</h1>
-            <p>Estruturas básicas de armazenamento em Java.</p>
-        </div>
+        <!-- Header -->
+        <section class="content-header">
 
-        <!-- Card -->
+            <span class="language-icon">📦</span>
+
+            <h1>Variáveis em Java</h1>
+
+            <p>
+                Variáveis são espaços de memória utilizados
+                para armazenar informações durante a execução
+                do programa.
+            </p>
+
+        </section>
+
+        <!-- O que são -->
+        <section class="info-card">
+
+            <h2>O que são variáveis?</h2>
+
+            <p>
+                Em Java, variáveis servem para guardar valores
+                que podem ser utilizados ao longo do código.
+            </p>
+
+            <p>
+                Cada variável possui:
+            </p>
+
+            <ul>
+
+                <li>✔ Um tipo</li>
+
+                <li>✔ Um nome</li>
+
+                <li>✔ Um valor</li>
+
+            </ul>
+
+        </section>
+
+        <!-- Tipos -->
+        <section class="info-card">
+
+            <h2>Tipos mais utilizados</h2>
+
+            <div class="topics-grid">
+
+                <div class="topic-box">
+                    <span>🔤</span>
+                    <h3>String</h3>
+                    <p>Armazena textos.</p>
+                </div>
+
+                <div class="topic-box">
+                    <span>🔢</span>
+                    <h3>int</h3>
+                    <p>Armazena números inteiros.</p>
+                </div>
+
+                <div class="topic-box">
+                    <span>📈</span>
+                    <h3>double</h3>
+                    <p>Números decimais.</p>
+                </div>
+
+                <div class="topic-box">
+                    <span>✔</span>
+                    <h3>boolean</h3>
+                    <p>True ou False.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Exemplos -->
         <section class="snippet-card">
 
             <div class="snippet-top">
+
                 <h2>String</h2>
 
                 <button class="copy-btn">
                     Copiar
                 </button>
+
             </div>
 
 <pre><code>
 String nome = "Aline";
+
 System.out.println(nome);
 </code></pre>
 
         </section>
 
-        <!-- Card -->
         <section class="snippet-card">
 
             <div class="snippet-top">
+
                 <h2>Inteiro</h2>
 
                 <button class="copy-btn">
                     Copiar
                 </button>
+
             </div>
 
 <pre><code>
 int idade = 20;
+
 System.out.println(idade);
+</code></pre>
+
+        </section>
+
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Double</h2>
+
+                <button class="copy-btn">
+                    Copiar
+                </button>
+
+            </div>
+
+<pre><code>
+double altura = 1.70;
+
+System.out.println(altura);
+</code></pre>
+
+        </section>
+
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Boolean</h2>
+
+                <button class="copy-btn">
+                    Copiar
+                </button>
+
+            </div>
+
+<pre><code>
+boolean aprovado = true;
+
+System.out.println(aprovado);
 </code></pre>
 
         </section>
 
     </main>
 
-    <script src="../../js/java.js"></script>
+    <script src="../../js/script.js"></script>
     <script src="../../js/menu.js"></script>
 
 </body>

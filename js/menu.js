@@ -24,7 +24,25 @@ menuToggle.addEventListener('click', () => {
 const params = new URLSearchParams(window.location.search);
 const page = params.get('page');
 
-const items = document.querySelectorAll('.menu-item');
+window.addEventListener('DOMContentLoaded', () => {
+
+    const params = new URLSearchParams(window.location.search);
+
+    const page = params.get('page');
+
+    const items = document.querySelectorAll('.menu-item');
+
+    items.forEach(item => {
+
+        if(item.dataset.page === page) {
+
+            item.classList.add('active');
+
+        }
+
+    });
+
+});
 
 items.forEach(item => {
 

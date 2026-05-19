@@ -1,36 +1,71 @@
-const container = document.getElementById('floating-container');
+/* =========================================
+   FLOATING ICONS
+========================================= */
 
-const symbols = ['♡', '✦'];
+const container =
+    document.getElementById('floating-container');
 
-for(let i = 0; i < 180; i++) {
+if(container) {
 
-    const floating = document.createElement('div');
+    const symbols = ['♡', '✦'];
 
-    floating.classList.add('floating');
+    for(let i = 0; i < 180; i++) {
 
-    // símbolo aleatório
-    floating.innerText =
-        symbols[Math.floor(Math.random() * symbols.length)];
+        const floating =
+            document.createElement('div');
 
-    // posição aleatória
-    floating.style.top =
-        Math.random() * 100 + '%';
+        floating.classList.add('floating');
 
-    floating.style.left =
-        Math.random() * 100 + '%';
+        floating.innerText =
+            symbols[Math.floor(Math.random() * symbols.length)];
 
-    // tamanho aleatório
-    floating.style.fontSize =
-        (1 + Math.random() * 2) + 'rem';
+        floating.style.top =
+            Math.random() * 100 + '%';
 
-    // duração aleatória
-    floating.style.animationDuration =
-        (4 + Math.random() * 6) + 's';
+        floating.style.left =
+            Math.random() * 100 + '%';
 
-    // delay aleatório
-    floating.style.animationDelay =
-        Math.random() * 5 + 's';
+        floating.style.fontSize =
+            (1 + Math.random() * 2) + 'rem';
 
-    container.appendChild(floating);
+        floating.style.animationDuration =
+            (4 + Math.random() * 6) + 's';
+
+        floating.style.animationDelay =
+            Math.random() * 5 + 's';
+
+        container.appendChild(floating);
+
+    }
 
 }
+
+/* =========================================
+   BOTÕES COPIAR
+========================================= */
+
+const copyButtons =
+    document.querySelectorAll('.copy-btn');
+
+copyButtons.forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        const code =
+            button.closest('.snippet-card')
+                  .querySelector('code')
+                  .innerText;
+
+        navigator.clipboard.writeText(code);
+
+        button.innerText = 'Copiado!';
+
+        setTimeout(() => {
+
+            button.innerText = 'Copiar';
+
+        }, 2000);
+
+    });
+
+});

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loops Python | CodeLibrary</title>
+
+    <link rel="stylesheet" href="../../css/python.css">
+    <link rel="stylesheet" href="../../css/menu.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Fundo -->
+    <div class="background"></div>
+
+    <!-- Botão Menu -->
+    <button class="menu-toggle" id="menuToggle">
+        ☰
+    </button>
+
+    <!-- Menu -->
+    <iframe 
+        src="menu.html?page=loops"
+        class="menu-frame">
+    </iframe>
+
+    <!-- Conteúdo -->
+    <main class="content" id="content">
+
+        <!-- Header -->
+        <section class="content-header">
+
+            <span class="language-icon">🔁</span>
+
+            <h1>Loops em Python</h1>
+
+            <p>
+                Loops são estruturas de repetição utilizadas
+                para executar ações várias vezes de forma automática.
+            </p>
+
+        </section>
+
+        <!-- O que são -->
+        <section class="info-card">
+
+            <h2>O que são loops?</h2>
+
+            <p>
+                Em Python, loops permitem repetir blocos
+                de código enquanto uma condição for verdadeira
+                ou enquanto existirem itens para percorrer.
+            </p>
+
+            <p>
+                Eles são muito utilizados para:
+            </p>
+
+            <ul>
+
+                <li>✔ Repetir tarefas automáticas</li>
+
+                <li>✔ Percorrer listas</li>
+
+                <li>✔ Criar contadores</li>
+
+                <li>✔ Fazer verificações</li>
+
+            </ul>
+
+        </section>
+
+        <!-- Tipos -->
+        <section class="info-card">
+
+            <h2>Tipos de loops</h2>
+
+            <div class="topics-grid">
+
+                <div class="topic-box">
+                    <span>🔄</span>
+
+                    <h3>for</h3>
+
+                    <p>
+                        Percorre listas, textos e sequências.
+                    </p>
+                </div>
+
+                <div class="topic-box">
+                    <span>♾️</span>
+
+                    <h3>while</h3>
+
+                    <p>
+                        Repete enquanto a condição for verdadeira.
+                    </p>
+                </div>
+
+                <div class="topic-box">
+                    <span>📋</span>
+
+                    <h3>range()</h3>
+
+                    <p>
+                        Cria sequências numéricas.
+                    </p>
+                </div>
+
+                <div class="topic-box">
+                    <span>🛑</span>
+
+                    <h3>break</h3>
+
+                    <p>
+                        Interrompe um loop.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FOR -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Loop For</h2>
+
+                <button class="copy-btn">
+                    Copiar
+                </button>
+
+            </div>
+
+<pre><code>
+frutas = ["maçã", "banana", "uva"]
+
+for fruta in frutas:
+    print(fruta)
+</code></pre>
+
+        </section>
+
+        <!-- WHILE -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Loop While</h2>
+
+                <button class="copy-btn">
+                    Copiar
+                </button>
+
+            </div>
+
+<pre><code>
+contador = 1
+
+while contador <= 5:
+    print(contador)
+
+    contador += 1
+</code></pre>
+
+        </section>
+
+        <!-- RANGE -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Usando range()</h2>
+
+                <button class="copy-btn">
+                    Copiar
+                </button>
+
+            </div>
+
+<pre><code>
+for numero in range(1, 6):
+    print(numero)
+</code></pre>
+
+        </section>
+
+        <!-- BREAK -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Break</h2>
+
+                <button class="copy-btn">
+                    Copiar
+                </button>
+
+            </div>
+
+<pre><code>
+for numero in range(10):
+
+    if numero == 5:
+        break
+
+    print(numero)
+</code></pre>
+
+        </section>
+
+        <!-- Dicas -->
+        <section class="info-card">
+
+            <h2>Dicas importantes 💡</h2>
+
+            <div class="advantages">
+
+                <div class="advantage-item">
+                    🔁 Use for para listas e sequências
+                </div>
+
+                <div class="advantage-item">
+                    ⚠ Evite loops infinitos no while
+                </div>
+
+                <div class="advantage-item">
+                    📚 range() ajuda em contagens
+                </div>
+
+                <div class="advantage-item">
+                    🚀 Loops deixam o código automático
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="../../js/script.js"></script>
+    <script src="../../js/menu.js"></script>
+
+</body>
+</html>
