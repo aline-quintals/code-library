@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CREATE TABLE SQL | CodeLibrary</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/sql.css">
+<link rel="stylesheet" href="../../css/menu.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<!-- Botão menu -->
+<button class="menu-toggle" id="menuToggle">
+☰
+</button>
+
+<!-- Menu -->
+<iframe
+src="menu.html?page=create-table"
+class="menu-frame">
+</iframe>
+
+<!-- Conteúdo -->
+<main class="content" id="content">
+
+<!-- Header -->
+<section class="content-header">
+
+<span class="language-icon">🗂️</span>
+
+<h1>CREATE TABLE</h1>
+
+<p>
+O CREATE TABLE é utilizado para criar
+novas tabelas dentro do banco de dados.
+</p>
+
+</section>
+
+<!-- Explicação -->
+<section class="info-card">
+
+<h2>O que é uma tabela?</h2>
+
+<p>
+As tabelas armazenam os dados do banco.
+Cada tabela possui colunas e linhas.
+</p>
+
+<ul>
+
+<li>✔ Colunas representam os tipos de dados</li>
+
+<li>✔ Linhas representam os registros</li>
+
+<li>✔ Cada tabela possui um nome</li>
+
+<li>✔ É possível definir chaves primárias</li>
+
+</ul>
+
+</section>
+
+<!-- Exemplo -->
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Criando uma tabela</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<pre><code>
+CREATE TABLE alunos (
+
+    id INT PRIMARY KEY,
+
+    nome VARCHAR(100),
+
+    idade INT
+
+);
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Resultado:</h3>
+
+<pre>
+Tabela "alunos" criada com sucesso.
+</pre>
+
+</div>
+
+</section>
+
+<!-- Tipos -->
+<section class="info-card">
+
+<h2>Tipos de dados comuns</h2>
+
+<div class="topics-grid">
+
+<div class="topic-box">
+
+<span>🔢</span>
+
+<h3>INT</h3>
+
+<p>
+Armazena números inteiros.
+</p>
+
+</div>
+
+<div class="topic-box">
+
+<span>🔤</span>
+
+<h3>VARCHAR</h3>
+
+<p>
+Armazena textos.
+</p>
+
+</div>
+
+<div class="topic-box">
+
+<span>📅</span>
+
+<h3>DATE</h3>
+
+<p>
+Armazena datas.
+</p>
+
+</div>
+
+<div class="topic-box">
+
+<span>✔</span>
+
+<h3>BOOLEAN</h3>
+
+<p>
+Armazena verdadeiro ou falso.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="../../js/script.js"></script>
+<script src="../../js/menu.js"></script>
+
+</body>
+</html>

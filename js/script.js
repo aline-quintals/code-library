@@ -69,3 +69,36 @@ copyButtons.forEach(button => {
     });
 
 });
+/* =========================================
+   EXECUTAR CÓDIGO
+========================================= */
+
+const runButtons =
+    document.querySelectorAll('.run-btn');
+
+runButtons.forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        const snippetCard =
+            button.closest('.snippet-card');
+
+        const output =
+            snippetCard.querySelector('.code-output');
+
+        output.classList.toggle('hidden');
+
+        // muda texto do botão
+        if(output.classList.contains('hidden')) {
+
+            button.innerText = 'Executar';
+
+        } else {
+
+            button.innerText = 'Ocultar';
+
+        }
+
+    });
+
+});
