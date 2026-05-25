@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Loops PHP | CodeLibrary</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/php.css">
+<link rel="stylesheet" href="../../css/menu.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<button class="menu-toggle" id="menuToggle">
+☰
+</button>
+
+<iframe 
+src="menu.html?page=loops"
+class="menu-frame">
+</iframe>
+
+<main class="content" id="content">
+
+<section class="content-header">
+
+<span class="language-icon">🔁</span>
+
+<h1>Loops em PHP</h1>
+
+<p>
+Loops são estruturas de repetição usadas para executar
+um bloco de código várias vezes de forma automática.
+</p>
+
+</section>
+
+<section class="info-card">
+
+<h2>O que são loops?</h2>
+
+<p>
+Em PHP, loops permitem repetir instruções enquanto uma condição for verdadeira
+ou enquanto houver elementos em uma lista para percorrer.
+</p>
+
+<ul>
+
+<li>✔ for</li>
+<li>✔ while</li>
+<li>✔ foreach</li>
+<li>✔ do while</li>
+
+</ul>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Loop FOR</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">Copiar</button>
+
+<button class="run-btn">Executar</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>for</strong> é usado quando sabemos exatamente quantas vezes o loop deve repetir.
+</p>
+
+<pre><code>
+for ($i = 1; $i <= 5; $i++) {
+
+    echo $i;
+    echo "<br>";
+
+}
+</code></pre>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Loop WHILE</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">Copiar</button>
+
+<button class="run-btn">Executar</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>while</strong> executa enquanto a condição for verdadeira.
+</p>
+
+<pre><code>
+$contador = 1;
+
+while ($contador <= 5) {
+
+    echo $contador;
+    echo "<br>";
+
+    $contador++;
+
+}
+</code></pre>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Loop FOREACH</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">Copiar</button>
+
+<button class="run-btn">Executar</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>foreach</strong> percorre automaticamente todos os elementos de um array.
+</p>
+
+<pre><code>
+$nomes = [
+
+    "Ana",
+    "Carlos",
+    "Aline"
+
+];
+
+foreach ($nomes as $nome) {
+
+    echo $nome;
+    echo "<br>";
+
+}
+</code></pre>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>DO WHILE</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">Copiar</button>
+
+<button class="run-btn">Executar</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>do while</strong> executa pelo menos uma vez antes de verificar a condição.
+</p>
+
+<pre><code>
+$numero = 1;
+
+do {
+
+    echo $numero;
+    echo "<br>";
+
+    $numero++;
+
+} while ($numero <= 3);
+</code></pre>
+
+</section>
+
+<section class="info-card">
+
+<h2>Dicas importantes 💡</h2>
+
+<p>
+Os loops são fundamentais para automatizar tarefas e evitar repetição de código manual.
+</p>
+
+<ul>
+
+<li>✔ Use for quando souber o número de repetições</li>
+<li>✔ Use while quando depender de condição</li>
+<li>✔ Use foreach para arrays</li>
+<li>✔ Use do while quando precisar executar pelo menos uma vez</li>
+<li>✔ Evite loops infinitos sem controle</li>
+
+</ul>
+
+</section>
+
+</main>
+
+<script src="../../js/script.js"></script>
+<script src="../../js/menu.js"></script>
+
+</body>
+</html>

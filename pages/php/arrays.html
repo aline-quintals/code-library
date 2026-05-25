@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Arrays PHP | CodeLibrary</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/php.css">
+<link rel="stylesheet" href="../../css/menu.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<button class="menu-toggle" id="menuToggle">
+☰
+</button>
+
+<iframe 
+src="menu.html?page=arrays"
+class="menu-frame">
+</iframe>
+
+<main class="content" id="content">
+
+<section class="content-header">
+
+<span class="language-icon">📚</span>
+
+<h1>Arrays em PHP</h1>
+
+<p>
+Arrays armazenam múltiplos valores dentro
+de uma única variável.
+</p>
+
+</section>
+
+<section class="info-card">
+
+<h2>O que são arrays?</h2>
+
+<p>
+Arrays ajudam a organizar informações relacionadas,
+como listas de nomes, produtos, números e muito mais.
+</p>
+
+<ul>
+
+<li>✔ Armazenam múltiplos dados</li>
+
+<li>✔ Possuem índices</li>
+
+<li>✔ Facilitam organização de informações</li>
+
+<li>✔ Funcionam com loops</li>
+
+<li>✔ Podem guardar textos e números</li>
+
+</ul>
+
+</section>
+
+<section class="info-card">
+
+<h2>Estrutura de um array</h2>
+
+<p>
+No PHP, os arrays são criados utilizando
+colchetes <strong>[]</strong>.
+</p>
+
+<pre><code>
+$frutas = [
+
+    "Maçã",
+    "Banana",
+    "Uva"
+
+];
+</code></pre>
+
+<p>
+Cada item do array possui uma posição,
+também chamada de índice.
+</p>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Array simples</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Os arrays começam na posição <strong>0</strong>.
+</p>
+
+<pre><code>
+$frutas = [
+
+    "Maçã",
+    "Banana",
+    "Uva"
+
+];
+
+echo $frutas[0];
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Maçã
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Mostrando várias posições</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Cada posição do array possui um índice diferente.
+</p>
+
+<pre><code>
+$cores = [
+
+    "Azul",
+    "Verde",
+    "Vermelho"
+
+];
+
+echo $cores[0];
+echo "<br>";
+
+echo $cores[1];
+echo "<br>";
+
+echo $cores[2];
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Azul
+Verde
+Vermelho
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Loop no array</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>foreach</strong> percorre automaticamente todos os itens do array.
+</p>
+
+<pre><code>
+$nomes = [
+
+    "Ana",
+    "Carlos",
+    "Aline"
+
+];
+
+foreach ($nomes as $nome) {
+
+    echo $nome;
+    echo "<br>";
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Ana
+Carlos
+Aline
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Array de números</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Arrays também podem armazenar números.
+</p>
+
+<pre><code>
+$numeros = [
+
+    10,
+    20,
+    30,
+    40
+
+];
+
+echo $numeros[2];
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+30
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Alterando valores</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* É possível alterar valores pelas posições do array.
+</p>
+
+<pre><code>
+$jogos = [
+
+    "Minecraft",
+    "Roblox",
+    "Free Fire"
+
+];
+
+$jogos[1] = "Fortnite";
+
+echo $jogos[1];
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Fortnite
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Adicionando novos itens</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O PHP permite adicionar novos valores facilmente.
+</p>
+
+<pre><code>
+$frutas = [
+
+    "Maçã",
+    "Banana"
+
+];
+
+$frutas[] = "Uva";
+
+print_r($frutas);
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Array
+(
+    [0] => Maçã
+    [1] => Banana
+    [2] => Uva
+)
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Tamanho do array</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* A função <strong>count()</strong> mostra quantos itens existem.
+</p>
+
+<pre><code>
+$animais = [
+
+    "Cachorro",
+    "Gato",
+    "Coelho"
+
+];
+
+echo count($animais);
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+3
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Array associativo</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Arrays associativos utilizam nomes ao invés de números como índice.
+</p>
+
+<pre><code>
+$pessoa = [
+
+    "nome" => "Aline",
+    "idade" => 20,
+    "cidade" => "São Paulo"
+
+];
+
+echo $pessoa["nome"];
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Aline
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Array com FOR tradicional</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O for tradicional percorre o array utilizando índices.
+</p>
+
+<pre><code>
+$frutas = [
+
+    "Maçã",
+    "Banana",
+    "Uva"
+
+];
+
+for ($i = 0; $i < count($frutas); $i++) {
+
+    echo $frutas[$i];
+    echo "<br>";
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Maçã
+Banana
+Uva
+</pre>
+
+</div>
+
+</section>
+
+<section class="info-card">
+
+<h2>Dicas importantes 💡</h2>
+
+<ul>
+
+<li>✔ Arrays começam no índice 0</li>
+
+<li>✔ Use <strong>foreach</strong> para percorrer arrays</li>
+
+<li>✔ Use <strong>count()</strong> para descobrir o tamanho</li>
+
+<li>✔ Arrays ajudam na organização dos dados</li>
+
+<li>✔ Arrays associativos usam nomes como índices</li>
+
+<li>✔ É possível alterar e adicionar valores</li>
+
+<li>✔ Arrays são muito usados em sistemas web</li>
+
+</ul>
+
+</section>
+
+</main>
+
+<script src="../../js/script.js"></script>
+<script src="../../js/menu.js"></script>
+
+</body>
+</html>

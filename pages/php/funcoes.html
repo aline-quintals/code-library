@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Condicionais PHP | CodeLibrary</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/php.css">
+<link rel="stylesheet" href="../../css/menu.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<button class="menu-toggle" id="menuToggle">
+☰
+</button>
+
+<iframe 
+src="menu.html?page=condicionais"
+class="menu-frame">
+</iframe>
+
+<main class="content" id="content">
+
+<section class="content-header">
+
+<span class="language-icon">🔀</span>
+
+<h1>Condicionais em PHP</h1>
+
+<p>
+Condicionais permitem que o sistema tome decisões
+com base em condições.
+</p>
+
+</section>
+
+<section class="info-card">
+
+<h2>O que são condicionais?</h2>
+
+<p>
+As condicionais verificam se algo é verdadeiro
+ou falso para executar diferentes ações.
+</p>
+
+<ul>
+
+<li>✔ if</li>
+
+<li>✔ else</li>
+
+<li>✔ elseif</li>
+
+<li>✔ switch</li>
+
+<li>✔ Operadores lógicos</li>
+
+</ul>
+
+</section>
+
+<section class="info-card">
+
+<h2>Operadores de comparação</h2>
+
+<ul>
+
+<li><strong>==</strong> Igual</li>
+
+<li><strong>!=</strong> Diferente</li>
+
+<li><strong>></strong> Maior que</li>
+
+<li><strong><</strong> Menor que</li>
+
+<li><strong>>=</strong> Maior ou igual</li>
+
+<li><strong><=</strong> Menor ou igual</li>
+
+</ul>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>If</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>if</strong> executa o bloco apenas se a condição for verdadeira.
+</p>
+
+<pre><code>
+$idade = 18;
+
+if ($idade >= 18) {
+
+    echo "Maior de idade";
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Maior de idade
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>If e Else</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>else</strong> executa quando a condição for falsa.
+</p>
+
+<pre><code>
+$numero = 5;
+
+if ($numero % 2 == 0) {
+
+    echo "Par";
+
+} else {
+
+    echo "Ímpar";
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Ímpar
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>If, Elseif e Else</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>elseif</strong> permite verificar várias condições.
+</p>
+
+<pre><code>
+$nota = 7;
+
+if ($nota >= 9) {
+
+    echo "Excelente";
+
+} elseif ($nota >= 6) {
+
+    echo "Aprovado";
+
+} else {
+
+    echo "Reprovado";
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Aprovado
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Usando AND</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O operador <strong>and</strong> exige que todas as condições sejam verdadeiras.
+</p>
+
+<pre><code>
+$idade = 20;
+$temIngresso = true;
+
+if ($idade >= 18 and $temIngresso) {
+
+    echo "Entrada permitida";
+
+} else {
+
+    echo "Entrada negada";
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Entrada permitida
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Usando OR</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O operador <strong>or</strong> exige apenas uma condição verdadeira.
+</p>
+
+<pre><code>
+$dia = "domingo";
+
+if ($dia == "sábado" or $dia == "domingo") {
+
+    echo "Fim de semana";
+
+} else {
+
+    echo "Dia útil";
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Fim de semana
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Switch</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>switch</strong> facilita verificações com vários casos.
+</p>
+
+<pre><code>
+$cor = "azul";
+
+switch ($cor) {
+
+    case "azul":
+        echo "Cor azul";
+        break;
+
+    case "verde":
+        echo "Cor verde";
+        break;
+
+    default:
+        echo "Outra cor";
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Cor azul
+</pre>
+
+</div>
+
+</section>
+
+<section class="info-card">
+
+<h2>Dicas importantes 💡</h2>
+
+<ul>
+
+<li>✔ Condições retornam verdadeiro ou falso</li>
+
+<li>✔ Use chaves para organizar o código</li>
+
+<li>✔ O elseif verifica múltiplas condições</li>
+
+<li>✔ O switch deixa o código mais organizado</li>
+
+<li>✔ Operadores lógicos ajudam nas verificações</li>
+
+<li>✔ Condicionais são muito usadas em sistemas</li>
+
+</ul>
+
+</section>
+
+</main>
+
+<script src="../../js/script.js"></script>
+<script src="../../js/menu.js"></script>
+
+</body>
+</html>
