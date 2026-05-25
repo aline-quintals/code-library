@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Variáveis C# | CodeLibrary</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/menu.css">
+    <link rel="stylesheet" href="../../css/csharp.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <!-- Botão Menu -->
+    <button class="menu-toggle" id="menuToggle">
+        ☰
+    </button>
+
+    <!-- Menu -->
+    <iframe 
+        src="menu.html?page=variaveis"
+        class="menu-frame">
+    </iframe>
+
+    <!-- Conteúdo -->
+    <main class="content" id="content">
+
+        <!-- HEADER -->
+        <section class="content-header">
+
+            <span class="language-icon">#️⃣</span>
+
+            <h1>Variáveis em C#</h1>
+
+            <p>
+                Variáveis são espaços de memória utilizados para armazenar dados
+                que serão usados durante a execução do programa em C#.
+            </p>
+
+        </section>
+
+        <!-- O QUE SÃO -->
+        <section class="info-card">
+
+            <h2>O que são variáveis?</h2>
+
+            <p>
+                Em C#, variáveis são utilizadas para guardar valores como textos,
+                números e valores lógicos. Diferente do Python, o C# exige que o tipo seja declarado.
+            </p>
+
+            <p>
+                Cada variável em C# possui:
+            </p>
+
+            <ul>
+                <li>✔ Um tipo (int, string, bool...)</li>
+                <li>✔ Um nome</li>
+                <li>✔ Um valor</li>
+            </ul>
+
+        </section>
+
+        <!-- REGRAS -->
+        <section class="info-card">
+
+            <h2>Regras das variáveis</h2>
+
+            <p>
+                O C# possui regras importantes para garantir organização e segurança no código.
+            </p>
+
+            <ul>
+                <li>✔ O tipo deve ser declarado obrigatoriamente</li>
+                <li>✔ O nome não pode começar com número</li>
+                <li>✔ C# diferencia maiúsculas e minúsculas</li>
+                <li>✔ Toda instrução termina com ;</li>
+            </ul>
+
+        </section>
+
+        <!-- TIPOS -->
+        <section class="info-card">
+
+            <h2>Tipos mais utilizados</h2>
+
+            <div class="topics-grid">
+
+                <div class="topic-box">
+                    <span>🔤</span>
+                    <h3>string</h3>
+                    <p>Armazena textos.</p>
+                </div>
+
+                <div class="topic-box">
+                    <span>🔢</span>
+                    <h3>int</h3>
+                    <p>Números inteiros.</p>
+                </div>
+
+                <div class="topic-box">
+                    <span>📈</span>
+                    <h3>double</h3>
+                    <p>Números decimais.</p>
+                </div>
+
+                <div class="topic-box">
+                    <span>✔</span>
+                    <h3>bool</h3>
+                    <p>true ou false.</p>
+                </div>
+
+                <div class="topic-box">
+                    <span>🔡</span>
+                    <h3>char</h3>
+                    <p>Um único caractere.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- STRING -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>String</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">Copiar</button>
+                    <button class="run-btn">Executar</button>
+
+                </div>
+
+            </div>
+
+            <p>
+                * O tipo string é usado para armazenar textos em C#.
+                Os valores devem estar entre aspas duplas.
+            </p>
+
+<pre><code>
+string nome = "Aline";
+
+Console.WriteLine(nome);
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Saída:</h3>
+
+<pre>
+Aline
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- INT -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Inteiro</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">Copiar</button>
+                    <button class="run-btn">Executar</button>
+
+                </div>
+
+            </div>
+
+            <p>
+                * O tipo int armazena números inteiros sem casas decimais.
+            </p>
+
+<pre><code>
+int idade = 20;
+
+Console.WriteLine(idade);
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Saída:</h3>
+
+<pre>
+20
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- DOUBLE -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Double</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">Copiar</button>
+                    <button class="run-btn">Executar</button>
+
+                </div>
+
+            </div>
+
+            <p>
+                * O double é usado para números com casas decimais,
+                como altura, peso e valores precisos.
+            </p>
+
+<pre><code>
+double altura = 1.70;
+
+Console.WriteLine(altura);
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Saída:</h3>
+
+<pre>
+1.7
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- BOOL -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Boolean</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">Copiar</button>
+                    <button class="run-btn">Executar</button>
+
+                </div>
+
+            </div>
+
+            <p>
+                * O tipo bool armazena apenas dois valores: true ou false.
+            </p>
+
+<pre><code>
+bool aprovado = true;
+
+Console.WriteLine(aprovado);
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Saída:</h3>
+
+<pre>
+True
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- CHAR -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Char</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">Copiar</button>
+                    <button class="run-btn">Executar</button>
+
+                </div>
+
+            </div>
+
+            <p>
+                * O tipo char armazena apenas um único caractere usando aspas simples.
+            </p>
+
+<pre><code>
+char letra = 'A';
+
+Console.WriteLine(letra);
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Saída:</h3>
+
+<pre>
+A
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- ALTERAÇÃO -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Alterando valores</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">Copiar</button>
+                    <button class="run-btn">Executar</button>
+
+                </div>
+
+            </div>
+
+            <p>
+                * Variáveis podem ter seus valores alterados durante o programa.
+            </p>
+
+<pre><code>
+string cidade = "São Paulo";
+
+cidade = "Rio de Janeiro";
+
+Console.WriteLine(cidade);
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Saída:</h3>
+
+<pre>
+Rio de Janeiro
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- CONSTANTES -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Constantes (const)</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">Copiar</button>
+                    <button class="run-btn">Executar</button>
+
+                </div>
+
+            </div>
+
+            <p>
+                * A palavra const cria uma constante que não pode ser alterada.
+            </p>
+
+<pre><code>
+const double PI = 3.14;
+
+Console.WriteLine(PI);
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Saída:</h3>
+
+<pre>
+3.14
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- DICAS -->
+        <section class="info-card">
+
+            <h2>Dicas importantes 💡</h2>
+
+            <div class="advantages">
+
+                <div class="advantage-item">📌 C# exige tipo da variável</div>
+                <div class="advantage-item">⚠ Toda linha termina com ;</div>
+                <div class="advantage-item">🔤 string usa aspas duplas</div>
+                <div class="advantage-item">🔡 char usa aspas simples</div>
+                <div class="advantage-item">🚀 Muito usado em jogos e empresas</div>
+                <div class="advantage-item">🧠 Linguagem fortemente tipada</div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../../js/script.js"></script>
+    <script src="../../js/menu.js"></script>
+
+</body>
+</html>

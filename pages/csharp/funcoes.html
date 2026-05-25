@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Funções C# | CodeLibrary</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/csharp.css">
+<link rel="stylesheet" href="../../css/menu.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<button class="menu-toggle" id="menuToggle">☰</button>
+
+<iframe src="menu.html?page=funcoes" class="menu-frame"></iframe>
+
+<main class="content" id="content">
+
+<section class="content-header">
+
+<span class="language-icon">⚙️</span>
+
+<h1>Funções em C#</h1>
+
+<p>
+Funções (métodos) são blocos de código reutilizáveis.
+</p>
+
+</section>
+
+<section class="info-card">
+
+<h2>O que são funções?</h2>
+
+<p>
+Em C#, funções são chamadas de métodos e ajudam a organizar o código.
+</p>
+
+<ul>
+<li>✔ Reutilização</li>
+<li>✔ Organização</li>
+<li>✔ Código limpo</li>
+</ul>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Método simples</h2>
+
+<div class="code-buttons">
+<button class="copy-btn">Copiar</button>
+<button class="run-btn">Executar</button>
+</div>
+
+</div>
+
+<p>
+* Um método executa uma ação quando chamado.
+</p>
+
+<pre><code>
+static void Saudacao()
+{
+    Console.WriteLine("Olá!");
+}
+
+Saudacao();
+</code></pre>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Método com parâmetro</h2>
+
+<div class="code-buttons">
+<button class="copy-btn">Copiar</button>
+<button class="run-btn">Executar</button>
+</div>
+
+</div>
+
+<p>
+* Parâmetros permitem enviar informações para o método.
+</p>
+
+<pre><code>
+static void MostrarNome(string nome)
+{
+    Console.WriteLine(nome);
+}
+
+MostrarNome("Aline");
+</code></pre>
+
+</section>
+
+<section class="info-card">
+
+<h2>Dicas importantes 💡</h2>
+
+<div class="advantages">
+
+<div class="advantage-item">
+⚙️ Funções ajudam a evitar repetição de código
+</div>
+
+<div class="advantage-item">
+📦 Métodos devem ter uma responsabilidade única
+</div>
+
+<div class="advantage-item">
+🚀 Use parâmetros para deixar funções mais flexíveis
+</div>
+
+<div class="advantage-item">
+🧠 Evite funções muito grandes
+</div>
+
+<div class="advantage-item">
+📚 Reutilização melhora organização do código
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="../../js/script.js"></script>
+<script src="../../js/menu.js"></script>
+
+</body>
+</html>

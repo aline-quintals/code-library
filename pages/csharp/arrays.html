@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Arrays C# | CodeLibrary</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/csharp.css">
+<link rel="stylesheet" href="../../css/menu.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<button class="menu-toggle" id="menuToggle">☰</button>
+
+<iframe src="menu.html?page=arrays" class="menu-frame"></iframe>
+
+<main class="content" id="content">
+
+<section class="content-header">
+
+<span class="language-icon">📚</span>
+
+<h1>Arrays em C#</h1>
+
+<p>
+Arrays armazenam vários valores do mesmo tipo em uma única variável.
+</p>
+
+</section>
+
+<section class="info-card">
+
+<h2>O que são arrays?</h2>
+
+<p>
+Arrays em C# são estruturas que armazenam múltiplos valores organizados por índice.
+</p>
+
+<ul>
+<li>✔ Vários valores</li>
+<li>✔ Índices começam em 0</li>
+<li>✔ Organização de dados</li>
+</ul>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Array simples</h2>
+
+<div class="code-buttons">
+<button class="copy-btn">Copiar</button>
+<button class="run-btn">Executar</button>
+</div>
+
+</div>
+
+<p>
+* Cada posição do array possui um índice.
+</p>
+
+<pre><code>
+string[] frutas = { "Maçã", "Banana", "Uva" };
+
+Console.WriteLine(frutas[0]);
+</code></pre>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Loop no array</h2>
+
+<div class="code-buttons">
+<button class="copy-btn">Copiar</button>
+<button class="run-btn">Executar</button>
+</div>
+
+</div>
+
+<p>
+* Podemos percorrer arrays com foreach.
+</p>
+
+<pre><code>
+string[] frutas = { "Maçã", "Banana", "Uva" };
+
+foreach (string fruta in frutas)
+{
+    Console.WriteLine(fruta);
+}
+</code></pre>
+
+</section>
+
+<section class="info-card">
+
+<h2>Dicas importantes 💡</h2>
+
+<div class="advantages">
+
+<div class="advantage-item">
+📚 Arrays começam no índice 0
+</div>
+
+<div class="advantage-item">
+⚠ Acesso inválido pode gerar erro (IndexOutOfRange)
+</div>
+
+<div class="advantage-item">
+🔁 Use foreach para percorrer facilmente
+</div>
+
+<div class="advantage-item">
+🚀 Arrays ajudam a organizar dados do mesmo tipo
+</div>
+
+<div class="advantage-item">
+🧠 Use Length para saber o tamanho
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="../../js/script.js"></script>
+<script src="../../js/menu.js"></script>
+
+</body>
+</html>

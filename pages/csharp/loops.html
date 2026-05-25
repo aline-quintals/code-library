@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Loops C# | CodeLibrary</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/csharp.css">
+<link rel="stylesheet" href="../../css/menu.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<button class="menu-toggle" id="menuToggle">☰</button>
+
+<iframe src="menu.html?page=loops" class="menu-frame"></iframe>
+
+<main class="content" id="content">
+
+<section class="content-header">
+
+<span class="language-icon">🔁</span>
+
+<h1>Loops em C#</h1>
+
+<p>
+Loops são estruturas que repetem blocos de código automaticamente.
+</p>
+
+</section>
+
+<section class="info-card">
+
+<h2>O que são loops?</h2>
+
+<p>
+Em C#, loops permitem executar uma ação várias vezes enquanto uma condição for verdadeira ou enquanto houver itens para percorrer.
+</p>
+
+<ul>
+<li>✔ for</li>
+<li>✔ while</li>
+<li>✔ foreach</li>
+</ul>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Loop for</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">Copiar</button>
+<button class="run-btn">Executar</button>
+
+</div>
+</div>
+
+<p>
+* O for é usado quando sabemos exatamente quantas vezes queremos repetir algo.
+</p>
+
+<pre><code>
+for (int i = 1; i <= 5; i++)
+{
+    Console.WriteLine(i);
+}
+</code></pre>
+
+<div class="code-output hidden">
+<h3>Saída:</h3>
+<pre>
+1
+2
+3
+4
+5
+</pre>
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Loop while</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">Copiar</button>
+<button class="run-btn">Executar</button>
+
+</div>
+</div>
+
+<p>
+* O while repete enquanto a condição for verdadeira.
+</p>
+
+<pre><code>
+int i = 1;
+
+while (i <= 5)
+{
+    Console.WriteLine(i);
+    i++;
+}
+</code></pre>
+
+<div class="code-output hidden">
+<h3>Saída:</h3>
+<pre>
+1
+2
+3
+4
+5
+</pre>
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Loop foreach</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">Copiar</button>
+<button class="run-btn">Executar</button>
+
+</div>
+</div>
+
+<p>
+* O foreach percorre listas e arrays automaticamente.
+</p>
+
+<pre><code>
+string[] nomes = { "Ana", "Carlos", "Aline" };
+
+foreach (string nome in nomes)
+{
+    Console.WriteLine(nome);
+}
+</code></pre>
+
+<div class="code-output hidden">
+<h3>Saída:</h3>
+<pre>
+Ana
+Carlos
+Aline
+</pre>
+</div>
+
+</section>
+<section class="info-card">
+
+<h2>Dicas importantes 💡</h2>
+
+<div class="advantages">
+
+<div class="advantage-item">
+🔁 Use for quando souber o número de repetições
+</div>
+
+<div class="advantage-item">
+⚠ while pode gerar loop infinito se não tomar cuidado
+</div>
+
+<div class="advantage-item">
+📚 foreach é ideal para arrays e listas
+</div>
+
+<div class="advantage-item">
+🚀 Loops ajudam a automatizar tarefas repetitivas
+</div>
+
+<div class="advantage-item">
+🧠 Sempre atualize variáveis no while
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="../../js/script.js"></script>
+<script src="../../js/menu.js"></script>
+
+</body>
+</html>
