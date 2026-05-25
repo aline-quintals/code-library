@@ -58,6 +58,33 @@ Loops ajudam a automatizar repetições no código.
 
 <li>✔ do while</li>
 
+<li>✔ break</li>
+
+<li>✔ continue</li>
+
+</ul>
+
+</section>
+
+<section class="info-card">
+
+<h2>Para que servem?</h2>
+
+<p>
+Os loops são usados para repetir tarefas
+automaticamente.
+</p>
+
+<ul>
+
+<li>✔ Criar contadores</li>
+
+<li>✔ Percorrer arrays</li>
+
+<li>✔ Automatizar tarefas</li>
+
+<li>✔ Repetir verificações</li>
+
 </ul>
 
 </section>
@@ -81,6 +108,11 @@ Executar
 </div>
 
 </div>
+
+<p class="snippet-explanation">
+* O <strong>for</strong> é muito utilizado
+quando sabemos quantas vezes o loop irá repetir.
+</p>
 
 <pre><code>
 for (int i = 1; i <= 5; i++) {
@@ -126,6 +158,11 @@ Executar
 
 </div>
 
+<p class="snippet-explanation">
+* O <strong>while</strong> repete o código
+enquanto a condição for verdadeira.
+</p>
+
 <pre><code>
 int contador = 1;
 
@@ -151,6 +188,342 @@ while (contador <= 5) {
 </pre>
 
 </div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Loop Do While</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>do while</strong> executa o bloco
+pelo menos uma vez antes da verificação.
+</p>
+
+<pre><code>
+int numero = 1;
+
+do {
+
+    System.out.println(numero);
+
+    numero++;
+
+} while (numero <= 5);
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+1
+2
+3
+4
+5
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Loop em Array</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O loop pode percorrer todos os itens
+de um array automaticamente.
+</p>
+
+<pre><code>
+String[] frutas = {
+
+    "Maçã",
+    "Banana",
+    "Uva"
+
+};
+
+for (String fruta : frutas) {
+
+    System.out.println(fruta);
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Maçã
+Banana
+Uva
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Usando Break</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>break</strong> interrompe o loop
+imediatamente.
+</p>
+
+<pre><code>
+for (int i = 1; i <= 10; i++) {
+
+    if (i == 5) {
+
+        break;
+
+    }
+
+    System.out.println(i);
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+1
+2
+3
+4
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Usando Continue</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>continue</strong> pula uma repetição
+do loop.
+</p>
+
+<pre><code>
+for (int i = 1; i <= 5; i++) {
+
+    if (i == 3) {
+
+        continue;
+
+    }
+
+    System.out.println(i);
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+1
+2
+4
+5
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Loop infinito</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Um loop infinito acontece quando a condição
+nunca se torna falsa.
+</p>
+
+<pre><code>
+while (true) {
+
+    System.out.println("Loop infinito");
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Resultado:</h3>
+
+<pre>
+Loop infinito
+Loop infinito
+Loop infinito
+...
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Contagem regressiva</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Loops também podem fazer contagens regressivas.
+</p>
+
+<pre><code>
+for (int i = 5; i >= 1; i--) {
+
+    System.out.println(i);
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+5
+4
+3
+2
+1
+</pre>
+
+</div>
+
+</section>
+
+<section class="info-card">
+
+<h2>Dicas importantes 💡</h2>
+
+<ul>
+
+<li>✔ Use for quando souber o número de repetições</li>
+
+<li>✔ Use while para condições variáveis</li>
+
+<li>✔ O do while executa pelo menos uma vez</li>
+
+<li>✔ Use break para interromper loops</li>
+
+<li>✔ Use continue para pular repetições</li>
+
+<li>✔ Evite loops infinitos sem controle</li>
+
+<li>✔ A indentação ajuda a organizar o código</li>
+
+</ul>
 
 </section>
 

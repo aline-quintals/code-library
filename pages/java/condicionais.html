@@ -59,6 +59,34 @@ dependendo de uma condição.
 
 <li>✔ else if</li>
 
+<li>✔ Operadores lógicos</li>
+
+</ul>
+
+</section>
+
+<section class="info-card">
+
+<h2>Operadores de comparação</h2>
+
+<p>
+Os operadores servem para comparar valores.
+</p>
+
+<ul>
+
+<li><strong>==</strong> Igual</li>
+
+<li><strong>!=</strong> Diferente</li>
+
+<li><strong>></strong> Maior que</li>
+
+<li><strong><</strong> Menor que</li>
+
+<li><strong>>=</strong> Maior ou igual</li>
+
+<li><strong><=</strong> Menor ou igual</li>
+
 </ul>
 
 </section>
@@ -82,6 +110,11 @@ Executar
 </div>
 
 </div>
+
+<p class="snippet-explanation">
+* O <strong>if</strong> executa um bloco de código
+caso a condição seja verdadeira.
+</p>
 
 <pre><code>
 int idade = 18;
@@ -125,6 +158,11 @@ Executar
 
 </div>
 
+<p class="snippet-explanation">
+* O <strong>else</strong> é executado quando
+a condição do if for falsa.
+</p>
+
 <pre><code>
 int numero = 5;
 
@@ -148,6 +186,344 @@ if (numero % 2 == 0) {
 </pre>
 
 </div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>If, Else If e Else</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>else if</strong> permite criar
+outras verificações no código.
+</p>
+
+<pre><code>
+int nota = 7;
+
+if (nota >= 9) {
+
+    System.out.println("Excelente");
+
+} else if (nota >= 6) {
+
+    System.out.println("Aprovado");
+
+} else {
+
+    System.out.println("Reprovado");
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Aprovado
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Verificando senha</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O método <strong>equals()</strong> é usado
+para comparar textos no Java.
+</p>
+
+<pre><code>
+String senha = "java123";
+
+if (senha.equals("java123")) {
+
+    System.out.println("Acesso permitido");
+
+} else {
+
+    System.out.println("Senha incorreta");
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Acesso permitido
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Usando AND</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O operador <strong>&&</strong> significa AND.
+As duas condições precisam ser verdadeiras.
+</p>
+
+<pre><code>
+int idade = 20;
+boolean temIngresso = true;
+
+if (idade >= 18 && temIngresso) {
+
+    System.out.println("Entrada permitida");
+
+} else {
+
+    System.out.println("Entrada negada");
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Entrada permitida
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Usando OR</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O operador <strong>||</strong> significa OR.
+Apenas uma condição precisa ser verdadeira.
+</p>
+
+<pre><code>
+String dia = "domingo";
+
+if (dia.equals("sábado") || dia.equals("domingo")) {
+
+    System.out.println("Fim de semana");
+
+} else {
+
+    System.out.println("Dia útil");
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Fim de semana
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Condicional com Scanner</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>Scanner</strong> permite receber
+dados digitados pelo usuário.
+</p>
+
+<pre><code>
+import java.util.Scanner;
+
+Scanner scanner = new Scanner(System.in);
+
+System.out.print("Digite um número: ");
+
+int numero = scanner.nextInt();
+
+if (numero > 10) {
+
+    System.out.println("Maior que 10");
+
+} else {
+
+    System.out.println("Menor ou igual a 10");
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Exemplo:</h3>
+
+<pre>
+Digite um número: 15
+Maior que 10
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Operador ternário</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O operador ternário é uma forma curta
+de escrever condicionais simples.
+</p>
+
+<pre><code>
+int idade = 17;
+
+String resultado = (idade >= 18)
+? "Maior de idade"
+: "Menor de idade";
+
+System.out.println(resultado);
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Menor de idade
+</pre>
+
+</div>
+
+</section>
+
+<section class="info-card">
+
+<h2>Dicas importantes 💡</h2>
+
+<ul>
+
+<li>✔ Use parênteses nas condições</li>
+
+<li>✔ Use chaves <strong>{ }</strong> para organizar blocos</li>
+
+<li>✔ O Java diferencia letras maiúsculas e minúsculas</li>
+
+<li>✔ Use <strong>equals()</strong> para comparar textos</li>
+
+<li>✔ O operador <strong>&&</strong> significa AND</li>
+
+<li>✔ O operador <strong>||</strong> significa OR</li>
+
+<li>✔ A indentação ajuda na leitura do código</li>
+
+</ul>
 
 </section>
 

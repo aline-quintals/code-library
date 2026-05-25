@@ -74,6 +74,30 @@
 
         </section>
 
+        <!-- Regras -->
+        <section class="info-card">
+
+            <h2>Regras das variáveis</h2>
+
+            <p>
+                O Java possui algumas regras importantes
+                para criar variáveis corretamente.
+            </p>
+
+            <ul>
+
+                <li>✔ O nome não pode começar com número</li>
+
+                <li>✔ Java diferencia letras maiúsculas e minúsculas</li>
+
+                <li>✔ Sempre finalize linhas com ;</li>
+
+                <li>✔ O tipo da variável deve ser informado</li>
+
+            </ul>
+
+        </section>
+
         <!-- Tipos -->
         <section class="info-card">
 
@@ -83,26 +107,42 @@
 
                 <div class="topic-box">
                     <span>🔤</span>
+
                     <h3>String</h3>
-                    <p>Armazena textos.</p>
+
+                    <p>
+                        Armazena textos.
+                    </p>
                 </div>
 
                 <div class="topic-box">
                     <span>🔢</span>
+
                     <h3>int</h3>
-                    <p>Armazena números inteiros.</p>
+
+                    <p>
+                        Armazena números inteiros.
+                    </p>
                 </div>
 
                 <div class="topic-box">
                     <span>📈</span>
+
                     <h3>double</h3>
-                    <p>Números decimais.</p>
+
+                    <p>
+                        Armazena números decimais.
+                    </p>
                 </div>
 
                 <div class="topic-box">
                     <span>✔</span>
+
                     <h3>boolean</h3>
-                    <p>true ou false.</p>
+
+                    <p>
+                        Armazena true ou false.
+                    </p>
                 </div>
 
             </div>
@@ -129,6 +169,11 @@
                 </div>
 
             </div>
+
+            <p>
+                * A variável String é utilizada para armazenar textos.
+                Os textos precisam estar entre aspas duplas.
+            </p>
 
 <pre><code>
 String nome = "Aline";
@@ -169,6 +214,11 @@ Aline
 
             </div>
 
+            <p>
+                * O tipo int é utilizado para armazenar números inteiros,
+                sem casas decimais.
+            </p>
+
 <pre><code>
 int idade = 20;
 
@@ -207,6 +257,11 @@ System.out.println(idade);
                 </div>
 
             </div>
+
+            <p>
+                * O tipo double é utilizado para números decimais,
+                como altura, peso e valores monetários.
+            </p>
 
 <pre><code>
 double altura = 1.70;
@@ -247,6 +302,11 @@ System.out.println(altura);
 
             </div>
 
+            <p>
+                * O tipo boolean armazena apenas dois valores:
+                true (verdadeiro) ou false (falso).
+            </p>
+
 <pre><code>
 boolean aprovado = true;
 
@@ -260,6 +320,218 @@ System.out.println(aprovado);
 <pre>
 true
 </pre>
+
+            </div>
+
+        </section>
+
+        <!-- CHAR -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Char</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">
+                        Copiar
+                    </button>
+
+                    <button class="run-btn">
+                        Executar
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p>
+                * O tipo char armazena apenas um único caractere.
+                Diferente da String, utiliza aspas simples.
+            </p>
+
+<pre><code>
+char letra = 'A';
+
+System.out.println(letra);
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Saída:</h3>
+
+<pre>
+A
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- ALTERANDO VARIÁVEIS -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Alterando valores</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">
+                        Copiar
+                    </button>
+
+                    <button class="run-btn">
+                        Executar
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p>
+                * As variáveis podem receber novos valores
+                durante a execução do programa.
+            </p>
+
+<pre><code>
+String cidade = "São Paulo";
+
+cidade = "Rio de Janeiro";
+
+System.out.println(cidade);
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Saída:</h3>
+
+<pre>
+Rio de Janeiro
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- CONCATENAÇÃO -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Concatenando textos</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">
+                        Copiar
+                    </button>
+
+                    <button class="run-btn">
+                        Executar
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p>
+                * A concatenação junta textos utilizando o símbolo +.
+            </p>
+
+<pre><code>
+String nome = "Aline";
+
+System.out.println("Olá, " + nome);
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Saída:</h3>
+
+<pre>
+Olá, Aline
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- CONSTANTES -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Constantes com final</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">
+                        Copiar
+                    </button>
+
+                    <button class="run-btn">
+                        Executar
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p>
+                * A palavra final cria uma constante,
+                ou seja, um valor que não pode ser alterado.
+            </p>
+
+<pre><code>
+final double PI = 3.14;
+
+System.out.println(PI);
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Saída:</h3>
+
+<pre>
+3.14
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- DICAS -->
+        <section class="info-card">
+
+            <h2>Dicas importantes 💡</h2>
+
+            <div class="advantages">
+
+                <div class="advantage-item">
+                    📌 Java exige o tipo da variável
+                </div>
+
+                <div class="advantage-item">
+                    ⚠ Toda linha termina com ;
+                </div>
+
+                <div class="advantage-item">
+                    🔤 String usa aspas duplas
+                </div>
+
+                <div class="advantage-item">
+                    🔡 char usa aspas simples
+                </div>
+
+                <div class="advantage-item">
+                    🚀 Variáveis ajudam a organizar dados
+                </div>
+
+                <div class="advantage-item">
+                    📚 Java é muito utilizado no mercado
+                </div>
 
             </div>
 

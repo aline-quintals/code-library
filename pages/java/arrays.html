@@ -58,7 +58,34 @@ Arrays guardam vários elementos do mesmo tipo.
 
 <li>✔ Podem ser percorridos com loops</li>
 
+<li>✔ Facilitam organização de dados</li>
+
 </ul>
+
+</section>
+
+<section class="info-card">
+
+<h2>Estrutura de um array</h2>
+
+<p>
+No Java, é necessário informar o tipo de dado
+do array.
+</p>
+
+<pre><code>
+String[] nomes = {
+
+    "Ana",
+    "Carlos",
+    "Aline"
+
+};
+</code></pre>
+
+<p>
+Nesse exemplo, o array armazena apenas textos.
+</p>
 
 </section>
 
@@ -81,6 +108,10 @@ Executar
 </div>
 
 </div>
+
+<p class="snippet-explanation">
+* Os arrays começam na posição <strong>0</strong>.
+</p>
 
 <pre><code>
 String[] frutas = {
@@ -110,6 +141,58 @@ Maçã
 
 <div class="snippet-top">
 
+<h2>Mostrando várias posições</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Cada posição do array possui um índice diferente.
+</p>
+
+<pre><code>
+String[] cores = {
+
+    "Azul",
+    "Verde",
+    "Vermelho"
+
+};
+
+System.out.println(cores[0]);
+System.out.println(cores[1]);
+System.out.println(cores[2]);
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Azul
+Verde
+Vermelho
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
 <h2>Loop no array</h2>
 
 <div class="code-buttons">
@@ -125,6 +208,10 @@ Executar
 </div>
 
 </div>
+
+<p class="snippet-explanation">
+* O <strong>for</strong> percorre automaticamente todos os elementos do array.
+</p>
 
 <pre><code>
 String[] nomes = {
@@ -153,6 +240,229 @@ Aline
 </pre>
 
 </div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Array de números</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Arrays também podem armazenar números inteiros.
+</p>
+
+<pre><code>
+int[] numeros = {
+
+    10,
+    20,
+    30,
+    40
+
+};
+
+System.out.println(numeros[2]);
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+30
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Alterando valores</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Os valores do array podem ser alterados.
+</p>
+
+<pre><code>
+String[] jogos = {
+
+    "Minecraft",
+    "Roblox",
+    "Free Fire"
+
+};
+
+jogos[1] = "Fortnite";
+
+System.out.println(jogos[1]);
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Fortnite
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Tamanho do array</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>length</strong> mostra quantas posições existem no array.
+</p>
+
+<pre><code>
+String[] animais = {
+
+    "Cachorro",
+    "Gato",
+    "Coelho"
+
+};
+
+System.out.println(animais.length);
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+3
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Array com FOR tradicional</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O for tradicional utiliza índices para percorrer o array.
+</p>
+
+<pre><code>
+String[] frutas = {
+
+    "Maçã",
+    "Banana",
+    "Uva"
+
+};
+
+for (int i = 0; i < frutas.length; i++) {
+
+    System.out.println(frutas[i]);
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Maçã
+Banana
+Uva
+</pre>
+
+</div>
+
+</section>
+
+<section class="info-card">
+
+<h2>Dicas importantes 💡</h2>
+
+<ul>
+
+<li>✔ Arrays começam no índice 0</li>
+
+<li>✔ Arrays armazenam apenas um tipo de dado</li>
+
+<li>✔ Use <strong>length</strong> para descobrir o tamanho</li>
+
+<li>✔ O <strong>for</strong> ajuda a percorrer arrays</li>
+
+<li>✔ Arrays ajudam na organização dos dados</li>
+
+<li>✔ É possível alterar valores pelas posições</li>
+
+</ul>
 
 </section>
 

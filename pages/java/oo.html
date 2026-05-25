@@ -60,7 +60,72 @@ POO organiza o código utilizando objetos e classes.
 
 <li>✔ Atributos</li>
 
+<li>✔ Encapsulamento</li>
+
 </ul>
+
+</section>
+
+<section class="info-card">
+
+<h2>Conceitos importantes</h2>
+
+<p>
+A Programação Orientada a Objetos possui
+conceitos fundamentais.
+</p>
+
+<div class="topics-grid">
+
+<div class="topic-box">
+
+<span>📦</span>
+
+<h3>Classe</h3>
+
+<p>
+Modelo utilizado para criar objetos.
+</p>
+
+</div>
+
+<div class="topic-box">
+
+<span>🧍</span>
+
+<h3>Objeto</h3>
+
+<p>
+Instância criada a partir da classe.
+</p>
+
+</div>
+
+<div class="topic-box">
+
+<span>⚙️</span>
+
+<h3>Método</h3>
+
+<p>
+Ação que o objeto pode executar.
+</p>
+
+</div>
+
+<div class="topic-box">
+
+<span>🏷️</span>
+
+<h3>Atributo</h3>
+
+<p>
+Características do objeto.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
@@ -83,6 +148,11 @@ Executar
 </div>
 
 </div>
+
+<p class="snippet-explanation">
+* Uma classe funciona como um modelo
+para criar objetos.
+</p>
 
 <pre><code>
 class Pessoa {
@@ -112,6 +182,59 @@ Aline
 
 <div class="snippet-top">
 
+<h2>Atributos</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Atributos armazenam informações
+sobre o objeto.
+</p>
+
+<pre><code>
+class Carro {
+
+    String modelo = "Ferrari";
+
+    int ano = 2025;
+
+}
+
+Carro carro = new Carro();
+
+System.out.println(carro.modelo);
+System.out.println(carro.ano);
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Ferrari
+2025
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
 <h2>Método</h2>
 
 <div class="code-buttons">
@@ -127,6 +250,11 @@ Executar
 </div>
 
 </div>
+
+<p class="snippet-explanation">
+* Métodos representam ações que o objeto
+pode executar.
+</p>
 
 <pre><code>
 class Cachorro {
@@ -153,6 +281,362 @@ Au au!
 </pre>
 
 </div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Método com parâmetro</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Métodos podem receber informações
+através de parâmetros.
+</p>
+
+<pre><code>
+class Pessoa {
+
+    void mostrarNome(String nome) {
+
+        System.out.println(nome);
+
+    }
+
+}
+
+Pessoa pessoa = new Pessoa();
+
+pessoa.mostrarNome("Aline");
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Aline
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Construtor</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O construtor é executado automaticamente
+quando o objeto é criado.
+</p>
+
+<pre><code>
+class Pessoa {
+
+    String nome;
+
+    Pessoa(String nome) {
+
+        this.nome = nome;
+
+    }
+
+}
+
+Pessoa pessoa = new Pessoa("Carlos");
+
+System.out.println(pessoa.nome);
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Carlos
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Criando vários objetos</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Uma mesma classe pode criar vários objetos.
+</p>
+
+<pre><code>
+class Aluno {
+
+    String nome;
+
+}
+
+Aluno aluno1 = new Aluno();
+Aluno aluno2 = new Aluno();
+
+aluno1.nome = "Ana";
+aluno2.nome = "Lucas";
+
+System.out.println(aluno1.nome);
+System.out.println(aluno2.nome);
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Ana
+Lucas
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Usando THIS</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>this</strong> representa o próprio objeto.
+</p>
+
+<pre><code>
+class Produto {
+
+    String nome;
+
+    void definirNome(String nome) {
+
+        this.nome = nome;
+
+    }
+
+}
+
+Produto produto = new Produto();
+
+produto.definirNome("Notebook");
+
+System.out.println(produto.nome);
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Notebook
+</pre>
+
+</div>
+
+</section>
+
+<!-- EXEMPLO DA VIDA REAL -->
+<section class="info-card">
+
+<h2>Exemplo na vida real 🌎</h2>
+
+<p>
+Na Programação Orientada a Objetos, podemos transformar
+objetos da vida real em código.
+</p>
+
+<p>
+Por exemplo:
+</p>
+
+<ul>
+
+<li>
+🚗 Um carro pode possuir:
+<strong>modelo, cor e velocidade</strong>
+</li>
+
+<li>
+🐶 Um cachorro pode possuir:
+<strong>nome, raça e idade</strong>
+</li>
+
+<li>
+👤 Uma pessoa pode possuir:
+<strong>nome, idade e altura</strong>
+</li>
+
+</ul>
+
+<p>
+Essas características são chamadas de
+<strong>atributos</strong>.
+</p>
+
+<p>
+Já as ações desses objetos são chamadas de
+<strong>métodos</strong>.
+</p>
+
+<ul>
+
+<li>🚗 Carro → acelerar()</li>
+
+<li>🐶 Cachorro → latir()</li>
+
+<li>👤 Pessoa → falar()</li>
+
+</ul>
+
+</section>
+
+<!-- EXEMPLO COMPLETO -->
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Exemplo completo</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Esse exemplo cria um carro com atributos
+e um método que representa uma ação.
+</p>
+
+<pre><code>
+class Carro {
+
+    String modelo = "Ferrari";
+
+    void acelerar() {
+
+        System.out.println("O carro acelerou!");
+
+    }
+
+}
+
+Carro carro = new Carro();
+
+System.out.println(carro.modelo);
+
+carro.acelerar();
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Ferrari
+O carro acelerou!
+</pre>
+
+</div>
+
+</section>
+
+<section class="info-card">
+
+<h2>Dicas importantes 💡</h2>
+
+<ul>
+
+<li>✔ Classes funcionam como modelos</li>
+
+<li>✔ Objetos são criados com <strong>new</strong></li>
+
+<li>✔ Métodos representam ações</li>
+
+<li>✔ Atributos armazenam dados</li>
+
+<li>✔ O construtor inicializa objetos</li>
+
+<li>✔ O <strong>this</strong> representa o próprio objeto</li>
+
+<li>✔ Java é fortemente orientado a objetos</li>
+
+</ul>
 
 </section>
 

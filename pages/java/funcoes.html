@@ -58,6 +58,43 @@ Funções em Java são chamadas de métodos.
 
 <li>✔ Código limpo</li>
 
+<li>✔ Automatização de tarefas</li>
+
+</ul>
+
+</section>
+
+<section class="info-card">
+
+<h2>Estrutura de um método</h2>
+
+<p>
+Os métodos possuem tipo de retorno,
+nome e parâmetros.
+</p>
+
+<pre><code>
+public static void saudacao() {
+
+    System.out.println("Olá!");
+
+}
+</code></pre>
+
+<p>
+Nesse exemplo:
+</p>
+
+<ul>
+
+<li>✔ <strong>public</strong> → acesso público</li>
+
+<li>✔ <strong>static</strong> → pode ser chamado sem criar objeto</li>
+
+<li>✔ <strong>void</strong> → não retorna valor</li>
+
+<li>✔ <strong>saudacao</strong> → nome do método</li>
+
 </ul>
 
 </section>
@@ -81,6 +118,11 @@ Executar
 </div>
 
 </div>
+
+<p class="snippet-explanation">
+* Métodos ajudam a executar tarefas
+sempre que forem chamados.
+</p>
 
 <pre><code>
 public static void saudacao() {
@@ -124,6 +166,11 @@ Executar
 
 </div>
 
+<p class="snippet-explanation">
+* Parâmetros permitem enviar informações
+para dentro do método.
+</p>
+
 <pre><code>
 public static void mostrarNome(String nome) {
 
@@ -143,6 +190,286 @@ Aline
 </pre>
 
 </div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Método com retorno</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>return</strong> devolve um valor
+para o programa.
+</p>
+
+<pre><code>
+public static int somar(int a, int b) {
+
+    return a + b;
+
+}
+
+System.out.println(somar(5, 3));
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+8
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Método com boolean</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Métodos também podem retornar
+verdadeiro ou falso.
+</p>
+
+<pre><code>
+public static boolean maiorDeIdade(int idade) {
+
+    return idade >= 18;
+
+}
+
+System.out.println(maiorDeIdade(20));
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+true
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Método com Scanner</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O Scanner permite receber dados
+digitados pelo usuário.
+</p>
+
+<pre><code>
+import java.util.Scanner;
+
+public class Main {
+
+    public static void mostrarMensagem(String nome) {
+
+        System.out.println("Olá, " + nome);
+
+    }
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite seu nome: ");
+
+        String nome = scanner.nextLine();
+
+        mostrarMensagem(nome);
+
+    }
+
+}
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Exemplo:</h3>
+
+<pre>
+Digite seu nome: Aline
+Olá, Aline
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Método sem retorno</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Métodos com <strong>void</strong>
+não retornam valores.
+</p>
+
+<pre><code>
+public static void mensagem() {
+
+    System.out.println("Bem-vindo!");
+
+}
+
+mensagem();
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Bem-vindo!
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Chamando o método várias vezes</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Um método pode ser reutilizado
+quantas vezes forem necessárias.
+</p>
+
+<pre><code>
+public static void saudacao() {
+
+    System.out.println("Olá!");
+
+}
+
+saudacao();
+saudacao();
+saudacao();
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Olá!
+Olá!
+Olá!
+</pre>
+
+</div>
+
+</section>
+
+<section class="info-card">
+
+<h2>Dicas importantes 💡</h2>
+
+<ul>
+
+<li>✔ Métodos ajudam a evitar repetição de código</li>
+
+<li>✔ Use nomes claros nos métodos</li>
+
+<li>✔ O <strong>return</strong> devolve valores</li>
+
+<li>✔ O <strong>void</strong> significa sem retorno</li>
+
+<li>✔ Parâmetros recebem informações</li>
+
+<li>✔ Métodos deixam o código organizado</li>
+
+<li>✔ Métodos podem ser reutilizados várias vezes</li>
+
+</ul>
 
 </section>
 
