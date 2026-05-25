@@ -64,6 +64,32 @@
 
 </section>
 
+<section class="info-card">
+
+    <h2>Operadores de comparação</h2>
+
+    <p>
+        Os operadores são usados para comparar valores.
+    </p>
+
+    <ul>
+
+        <li><strong>==</strong> Igual</li>
+
+        <li><strong>!=</strong> Diferente</li>
+
+        <li><strong>></strong> Maior que</li>
+
+        <li><strong><</strong> Menor que</li>
+
+        <li><strong>>=</strong> Maior ou igual</li>
+
+        <li><strong><=</strong> Menor ou igual</li>
+
+    </ul>
+
+</section>
+
 <section class="snippet-card">
 
 <div class="snippet-top">
@@ -83,6 +109,10 @@
     </div>
 
 </div>
+
+<p class="snippet-explanation">
+    * O <strong>if</strong> executa um bloco de código quando a condição for verdadeira.
+</p>
 
 <pre><code>
 idade = 18
@@ -123,6 +153,10 @@ Maior de idade
 
 </div>
 
+<p class="snippet-explanation">
+    * O <strong>else</strong> executa outro bloco caso a condição seja falsa.
+</p>
+
 <pre><code>
 numero = 5
 
@@ -141,6 +175,258 @@ else:
 </pre>
 
 </div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+    <h2>If, Elif e Else</h2>
+
+    <div class="code-buttons">
+
+        <button class="copy-btn">
+            Copiar
+        </button>
+
+        <button class="run-btn">
+            Executar
+        </button>
+
+    </div>
+
+</div>
+
+<p class="snippet-explanation">
+    * O <strong>elif</strong> permite verificar novas condições caso a anterior seja falsa.
+</p>
+
+<pre><code>
+nota = 7
+
+if nota >= 9:
+    print("Excelente")
+
+elif nota >= 6:
+    print("Aprovado")
+
+else:
+    print("Reprovado")
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Aprovado
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+    <h2>Comando condicional</h2>
+
+    <div class="code-buttons">
+
+        <button class="copy-btn">
+            Copiar
+        </button>
+
+        <button class="run-btn">
+            Executar
+        </button>
+
+    </div>
+
+</div>
+
+<p class="snippet-explanation">
+    * O <strong>input()</strong> permite que o usuário digite informações no programa.
+</p>
+
+<pre><code>
+numero = int(input("Digite um número: "))
+
+if numero > 10:
+    print("O número é maior que 10")
+
+else:
+    print("O número é menor ou igual a 10")
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Exemplo:</h3>
+
+<pre>
+Digite um número: 15
+O número é maior que 10
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+    <h2>Verificando senha</h2>
+
+    <div class="code-buttons">
+
+        <button class="copy-btn">
+            Copiar
+        </button>
+
+        <button class="run-btn">
+            Executar
+        </button>
+
+    </div>
+
+</div>
+
+<p class="snippet-explanation">
+    * O operador <strong>==</strong> verifica se dois valores são iguais.
+</p>
+
+<pre><code>
+senha = input("Digite a senha: ")
+
+if senha == "python123":
+    print("Acesso permitido")
+
+else:
+    print("Senha incorreta")
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Exemplo:</h3>
+
+<pre>
+Digite a senha: python123
+Acesso permitido
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+    <h2>Usando AND</h2>
+
+    <div class="code-buttons">
+
+        <button class="copy-btn">
+            Copiar
+        </button>
+
+        <button class="run-btn">
+            Executar
+        </button>
+
+    </div>
+
+</div>
+
+<p class="snippet-explanation">
+    * O <strong>and</strong> exige que todas as condições sejam verdadeiras.
+</p>
+
+<pre><code>
+idade = 20
+tem_ingresso = True
+
+if idade >= 18 and tem_ingresso:
+    print("Entrada permitida")
+else:
+    print("Entrada negada")
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Entrada permitida
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+    <h2>Usando OR</h2>
+
+    <div class="code-buttons">
+
+        <button class="copy-btn">
+            Copiar
+        </button>
+
+        <button class="run-btn">
+            Executar
+        </button>
+
+    </div>
+
+</div>
+
+<p class="snippet-explanation">
+    * O <strong>or</strong> executa o código se pelo menos uma condição for verdadeira.
+</p>
+
+<pre><code>
+dia = "domingo"
+
+if dia == "sábado" or dia == "domingo":
+    print("Fim de semana")
+else:
+    print("Dia útil")
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Fim de semana
+</pre>
+
+</div>
+
+</section>
+
+<section class="info-card">
+
+    <h2>Dicas importantes</h2>
+
+    <ul>
+
+        <li>✔ Use dois pontos <strong>:</strong> após o if, elif e else</li>
+
+        <li>✔ A indentação é obrigatória no Python</li>
+
+        <li>✔ Use TAB ou 4 espaços para organizar o código</li>
+
+        <li>✔ As condições retornam verdadeiro ou falso</li>
+
+    </ul>
 
 </section>
 

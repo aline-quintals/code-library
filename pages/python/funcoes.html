@@ -63,6 +63,22 @@ várias vezes.
 
 </section>
 
+<section class="info-card">
+
+<h2>Estrutura de uma função</h2>
+
+<p>
+As funções em Python são criadas usando a palavra
+<strong>def</strong>.
+</p>
+
+<pre><code>
+def nome_da_funcao():
+    print("Olá")
+</code></pre>
+
+</section>
+
 <section class="snippet-card">
 
 <div class="snippet-top">
@@ -82,6 +98,10 @@ Executar
 </div>
 
 </div>
+
+<p class="snippet-explanation">
+* A função só será executada quando for chamada pelo nome.
+</p>
 
 <pre><code>
 def saudacao():
@@ -122,6 +142,10 @@ Executar
 
 </div>
 
+<p class="snippet-explanation">
+* Parâmetros permitem enviar informações para a função.
+</p>
+
 <pre><code>
 def mostrar_nome(nome):
     print(nome)
@@ -138,6 +162,206 @@ Aline
 </pre>
 
 </div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Função com dois parâmetros</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Uma função pode receber mais de um parâmetro.
+</p>
+
+<pre><code>
+def soma(a, b):
+    print(a + b)
+
+soma(5, 3)
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+8
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Função com retorno</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>return</strong> devolve um valor para ser utilizado depois.
+</p>
+
+<pre><code>
+def multiplicar(a, b):
+    return a * b
+
+resultado = multiplicar(4, 5)
+
+print(resultado)
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+20
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Função com input</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Funções também podem trabalhar com dados digitados pelo usuário.
+</p>
+
+<pre><code>
+def mensagem():
+    nome = input("Digite seu nome: ")
+    print("Olá,", nome)
+
+mensagem()
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Exemplo:</h3>
+
+<pre>
+Digite seu nome: Aline
+Olá, Aline
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Chamando a função várias vezes</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Uma função pode ser reutilizada várias vezes no programa.
+</p>
+
+<pre><code>
+def saudacao():
+    print("Bem-vindo!")
+
+saudacao()
+saudacao()
+saudacao()
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Bem-vindo!
+Bem-vindo!
+Bem-vindo!
+</pre>
+
+</div>
+
+</section>
+
+<section class="info-card">
+
+<h2>Dicas importantes 💡</h2>
+
+<ul>
+
+<li>✔ Use <strong>def</strong> para criar funções</li>
+
+<li>✔ Funções ajudam na organização do código</li>
+
+<li>✔ Parâmetros recebem informações</li>
+
+<li>✔ O <strong>return</strong> devolve valores</li>
+
+<li>✔ Funções evitam repetição de código</li>
+
+</ul>
 
 </section>
 

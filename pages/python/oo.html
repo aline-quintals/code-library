@@ -65,6 +65,85 @@ POO significa Programação Orientada a Objetos.
 
 </section>
 
+<section class="info-card">
+
+<h2>Conceitos importantes</h2>
+
+<div class="topics-grid">
+
+<div class="topic-box">
+
+<span>📦</span>
+
+<h3>Classe</h3>
+
+<p>
+É o modelo utilizado para criar objetos.
+</p>
+
+</div>
+
+<div class="topic-box">
+
+<span>👤</span>
+
+<h3>Objeto</h3>
+
+<p>
+É a instância criada a partir da classe.
+</p>
+
+</div>
+
+<div class="topic-box">
+
+<span>⚙️</span>
+
+<h3>Método</h3>
+
+<p>
+É uma função criada dentro da classe.
+</p>
+
+</div>
+
+<div class="topic-box">
+
+<span>📝</span>
+
+<h3>Atributo</h3>
+
+<p>
+São as características do objeto.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="info-card">
+
+<h2>Estrutura de uma classe</h2>
+
+<p>
+As classes são criadas usando a palavra
+<strong>class</strong>.
+</p>
+
+<pre><code>
+class Pessoa:
+    pass
+</code></pre>
+
+<p>
+O comando <strong>pass</strong> serve para criar
+uma classe vazia temporariamente.
+</p>
+
+</section>
+
 <section class="snippet-card">
 
 <div class="snippet-top">
@@ -84,6 +163,10 @@ Executar
 </div>
 
 </div>
+
+<p class="snippet-explanation">
+* A função <strong>__init__()</strong> é executada automaticamente quando o objeto é criado.
+</p>
 
 <pre><code>
 class Pessoa:
@@ -112,6 +195,56 @@ Aline
 
 <div class="snippet-top">
 
+<h2>Criando objetos</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Objetos são criados a partir de uma classe.
+</p>
+
+<pre><code>
+class Carro:
+
+    def __init__(self, modelo):
+        self.modelo = modelo
+
+carro1 = Carro("Ferrari")
+carro2 = Carro("BMW")
+
+print(carro1.modelo)
+print(carro2.modelo)
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Ferrari
+BMW
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
 <h2>Método</h2>
 
 <div class="code-buttons">
@@ -127,6 +260,10 @@ Executar
 </div>
 
 </div>
+
+<p class="snippet-explanation">
+* Métodos são funções que pertencem à classe.
+</p>
 
 <pre><code>
 class Cachorro:
@@ -148,6 +285,243 @@ Au au!
 </pre>
 
 </div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Atributos</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Atributos armazenam informações do objeto.
+</p>
+
+<pre><code>
+class Aluno:
+
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+
+aluno = Aluno("Carlos", 16)
+
+print(aluno.nome)
+print(aluno.idade)
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Carlos
+16
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Usando SELF</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>self</strong> representa o próprio objeto criado.
+</p>
+
+<pre><code>
+class Pessoa:
+
+    def falar(self):
+        print("Olá!")
+
+p = Pessoa()
+
+p.falar()
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Olá!
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Alterando atributos</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Os atributos podem ser modificados depois da criação do objeto.
+</p>
+
+<pre><code>
+class Jogo:
+
+    def __init__(self, nome):
+        self.nome = nome
+
+game = Jogo("Minecraft")
+
+game.nome = "Roblox"
+
+print(game.nome)
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Roblox
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Método com parâmetro</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Métodos também podem receber parâmetros.
+</p>
+
+<pre><code>
+class Calculadora:
+
+    def soma(self, a, b):
+        print(a + b)
+
+calc = Calculadora()
+
+calc.soma(5, 8)
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+13
+</pre>
+
+</div>
+
+</section>
+
+<section class="info-card">
+
+<h2>Exemplo do mundo real 🌎</h2>
+
+<p>
+Uma classe funciona como uma forma ou modelo.
+</p>
+
+<ul>
+
+<li>✔ Classe: Carro</li>
+
+<li>✔ Objeto: Ferrari</li>
+
+<li>✔ Atributo: cor</li>
+
+<li>✔ Método: acelerar()</li>
+
+</ul>
+
+</section>
+
+<section class="info-card">
+
+<h2>Dicas importantes 💡</h2>
+
+<ul>
+
+<li>✔ Classes criam objetos</li>
+
+<li>✔ Objetos possuem atributos e métodos</li>
+
+<li>✔ O <strong>self</strong> representa o próprio objeto</li>
+
+<li>✔ O <strong>__init__()</strong> inicia os atributos</li>
+
+<li>✔ POO ajuda na organização do código</li>
+
+<li>✔ Classes podem ser reutilizadas várias vezes</li>
+
+</ul>
 
 </section>
 

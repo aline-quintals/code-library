@@ -148,6 +148,10 @@
 
             </div>
 
+            <p class="snippet-explanation">
+                * O <strong>for</strong> percorre cada item da lista automaticamente.
+            </p>
+
 <pre><code>
 frutas = ["maçã", "banana", "uva"]
 
@@ -163,6 +167,101 @@ for fruta in frutas:
 maçã
 banana
 uva
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- FOR COM LISTA -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>For percorrendo lista</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">
+                        Copiar
+                    </button>
+
+                    <button class="run-btn">
+                        Executar
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p class="snippet-explanation">
+                * A variável <strong>fruta</strong> recebe um item da lista por vez.
+            </p>
+
+<pre><code>
+frutas = ["banana", "maçã", "pera", "abacaxi", "laranja"]
+
+for fruta in frutas:
+    print(fruta)
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Resultado:</h3>
+
+<pre>
+banana
+maçã
+pera
+abacaxi
+laranja
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- STRING -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>For percorrendo texto</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">
+                        Copiar
+                    </button>
+
+                    <button class="run-btn">
+                        Executar
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p class="snippet-explanation">
+                * O <strong>for</strong> também pode percorrer letras de uma palavra.
+            </p>
+
+<pre><code>
+for letra in "banana":
+    print(letra)
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Resultado:</h3>
+
+<pre>
+b
+a
+n
+a
+n
+a
 </pre>
 
             </div>
@@ -190,6 +289,10 @@ uva
 
             </div>
 
+            <p class="snippet-explanation">
+                * O <strong>while</strong> continua executando enquanto a condição for verdadeira.
+            </p>
+
 <pre><code>
 contador = 1
 
@@ -209,6 +312,58 @@ while contador <= 5:
 3
 4
 5
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- BREAK -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Usando break</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">
+                        Copiar
+                    </button>
+
+                    <button class="run-btn">
+                        Executar
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p class="snippet-explanation">
+                * O <strong>break</strong> interrompe o loop imediatamente.
+            </p>
+
+<pre><code>
+i = 1
+
+while i < 6:
+
+    print(i)
+
+    if i == 3:
+        break
+
+    i += 1
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Resultado:</h3>
+
+<pre>
+1
+2
+3
 </pre>
 
             </div>
@@ -236,33 +391,36 @@ while contador <= 5:
 
             </div>
 
+            <p class="snippet-explanation">
+                * O <strong>range()</strong> cria uma sequência de números.
+            </p>
+
 <pre><code>
-for numero in range(1, 6):
-    print(numero)
+for x in range(1, 5):
+    print(x)
 </code></pre>
 
             <div class="code-output hidden">
 
-                <h3>Saída:</h3>
+                <h3>Resultado:</h3>
 
 <pre>
 1
 2
 3
 4
-5
 </pre>
 
             </div>
 
         </section>
 
-        <!-- BREAK -->
+        <!-- RANGE COM PASSO -->
         <section class="snippet-card">
 
             <div class="snippet-top">
 
-                <h2>Break</h2>
+                <h2>Range com passo</h2>
 
                 <div class="code-buttons">
 
@@ -278,28 +436,50 @@ for numero in range(1, 6):
 
             </div>
 
+            <p class="snippet-explanation">
+                * O terceiro valor do <strong>range()</strong> define o passo da contagem.
+            </p>
+
 <pre><code>
-for numero in range(10):
-
-    if numero == 5:
-        break
-
+for numero in range(0, 11, 2):
     print(numero)
 </code></pre>
 
             <div class="code-output hidden">
 
-                <h3>Saída:</h3>
+                <h3>Resultado:</h3>
 
 <pre>
 0
-1
 2
-3
 4
+6
+8
+10
 </pre>
 
             </div>
+
+        </section>
+
+        <!-- LOOP INFINITO -->
+        <section class="info-card">
+
+            <h2>⚠ Cuidado com loops infinitos</h2>
+
+            <p>
+                * Um loop infinito acontece quando a condição
+                nunca deixa de ser verdadeira.
+            </p>
+
+<pre><code>
+while True:
+    print("Esse loop nunca termina")
+</code></pre>
+
+            <p>
+                Use com cuidado para evitar travamentos.
+            </p>
 
         </section>
 
@@ -324,6 +504,14 @@ for numero in range(10):
 
                 <div class="advantage-item">
                     🚀 Loops deixam o código automático
+                </div>
+
+                <div class="advantage-item">
+                    🛑 break interrompe a repetição
+                </div>
+
+                <div class="advantage-item">
+                    🔤 O for também percorre textos
                 </div>
 
             </div>

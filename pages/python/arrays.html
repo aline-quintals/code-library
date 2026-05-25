@@ -58,7 +58,23 @@ Python utiliza principalmente listas para armazenar conjuntos de dados.
 
 <li>✔ Podem ser percorridas com loops</li>
 
+<li>✔ Aceitam diferentes tipos de dados</li>
+
 </ul>
+
+</section>
+
+<section class="info-card">
+
+<h2>Estrutura de uma lista</h2>
+
+<p>
+As listas usam colchetes <strong>[]</strong> e os valores são separados por vírgulas.
+</p>
+
+<pre><code>
+cores = ["Azul", "Verde", "Vermelho"]
+</code></pre>
 
 </section>
 
@@ -81,6 +97,10 @@ Executar
 </div>
 
 </div>
+
+<p class="snippet-explanation">
+* Uma lista pode armazenar vários valores dentro de uma única variável.
+</p>
 
 <pre><code>
 frutas = ["maçã", "banana", "uva"]
@@ -120,6 +140,10 @@ Executar
 
 </div>
 
+<p class="snippet-explanation">
+* O <strong>for</strong> percorre cada item da lista automaticamente.
+</p>
+
 <pre><code>
 nomes = ["Ana", "Carlos", "Aline"]
 
@@ -138,6 +162,302 @@ Aline
 </pre>
 
 </div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Lista de frutas</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* A variável <strong>fruta</strong> recebe um item da lista por vez.
+</p>
+
+<pre><code>
+frutas = ["Maçã", "Banana", "Uva", "Morango", "Laranja"]
+
+for fruta in frutas:
+    print(fruta)
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Maçã
+Banana
+Uva
+Morango
+Laranja
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Lista de maquiagem</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* Listas podem armazenar qualquer tipo de informação, como objetos, nomes ou produtos.
+</p>
+
+<pre><code>
+maquiagem = ["Blush", "Pó", "Rímel", "Base", "Batom"]
+
+for item in maquiagem:
+    print(item)
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Blush
+Pó
+Rímel
+Base
+Batom
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Adicionando itens</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O método <strong>append()</strong> adiciona um novo item ao final da lista.
+</p>
+
+<pre><code>
+frutas = ["Maçã", "Banana"]
+
+frutas.append("Uva")
+
+print(frutas)
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+['Maçã', 'Banana', 'Uva']
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Acessando posições</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* As listas começam na posição <strong>0</strong>.
+</p>
+
+<pre><code>
+cores = ["Azul", "Verde", "Vermelho"]
+
+print(cores[0])
+print(cores[1])
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+Azul
+Verde
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Lista vazia com FOR</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* É possível criar uma lista vazia e adicionar valores usando <strong>append()</strong>.
+</p>
+
+<pre><code>
+numeros = []
+
+for i in range(5):
+    numero = int(input("Digite um número: "))
+    numeros.append(numero)
+
+print(numeros)
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Exemplo:</h3>
+
+<pre>
+Digite um número: 2
+Digite um número: 4
+Digite um número: 6
+Digite um número: 8
+Digite um número: 10
+
+[2, 4, 6, 8, 10]
+</pre>
+
+</div>
+
+</section>
+
+<section class="snippet-card">
+
+<div class="snippet-top">
+
+<h2>Tamanho da lista</h2>
+
+<div class="code-buttons">
+
+<button class="copy-btn">
+Copiar
+</button>
+
+<button class="run-btn">
+Executar
+</button>
+
+</div>
+
+</div>
+
+<p class="snippet-explanation">
+* O <strong>len()</strong> mostra quantos itens existem na lista.
+</p>
+
+<pre><code>
+animais = ["Cachorro", "Gato", "Coelho"]
+
+print(len(animais))
+</code></pre>
+
+<div class="code-output hidden">
+
+<h3>Saída:</h3>
+
+<pre>
+3
+</pre>
+
+</div>
+
+</section>
+
+<section class="info-card">
+
+<h2>Dicas importantes</h2>
+
+<ul>
+
+<li>✔ As listas começam no índice 0</li>
+
+<li>✔ Use <strong>append()</strong> para adicionar itens</li>
+
+<li>✔ O <strong>for</strong> ajuda a percorrer listas</li>
+
+<li>✔ Use <strong>len()</strong> para descobrir o tamanho da lista</li>
+
+<li>✔ Listas podem guardar textos, números e booleanos</li>
+
+</ul>
 
 </section>
 

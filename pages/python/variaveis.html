@@ -78,6 +78,30 @@
 
         </section>
 
+        <!-- Regras -->
+        <section class="info-card">
+
+            <h2>Regras para criar variáveis</h2>
+
+            <ul>
+
+                <li>✔ O nome não pode começar com números</li>
+
+                <li>✔ Não pode conter espaços</li>
+
+                <li>✔ Use nomes fáceis de entender</li>
+
+                <li>✔ Python diferencia letras maiúsculas e minúsculas</li>
+
+            </ul>
+
+<pre><code>
+nome = "Aline"
+idade = 20
+</code></pre>
+
+        </section>
+
         <!-- Tipos -->
         <section class="info-card">
 
@@ -158,6 +182,10 @@
 
             </div>
 
+<p class="snippet-explanation">
+* Strings armazenam textos e devem ficar entre aspas.
+</p>
+
 <pre><code>
 nome = "Aline"
 
@@ -196,6 +224,10 @@ Aline
                 </div>
 
             </div>
+
+<p class="snippet-explanation">
+* O tipo <strong>int</strong> armazena números inteiros.
+</p>
 
 <pre><code>
 idade = 20
@@ -236,6 +268,10 @@ print(idade)
 
             </div>
 
+<p class="snippet-explanation">
+* O tipo <strong>float</strong> armazena números com casas decimais.
+</p>
+
 <pre><code>
 altura = 1.70
 
@@ -275,6 +311,10 @@ print(altura)
 
             </div>
 
+<p class="snippet-explanation">
+* O tipo <strong>bool</strong> possui apenas dois valores: True ou False.
+</p>
+
 <pre><code>
 aprovado = True
 
@@ -287,6 +327,181 @@ print(aprovado)
 
 <pre>
 True
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- CONCATENAÇÃO -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Juntando textos</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">
+                        Copiar
+                    </button>
+
+                    <button class="run-btn">
+                        Executar
+                    </button>
+
+                </div>
+
+            </div>
+
+<p class="snippet-explanation">
+* É possível juntar textos usando o símbolo <strong>+</strong>.
+</p>
+
+<pre><code>
+nome = "Aline"
+
+print("Olá, " + nome)
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Saída:</h3>
+
+<pre>
+Olá, Aline
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- INPUT -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Usando input()</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">
+                        Copiar
+                    </button>
+
+                    <button class="run-btn">
+                        Executar
+                    </button>
+
+                </div>
+
+            </div>
+
+<p class="snippet-explanation">
+* O <strong>input()</strong> permite que o usuário digite informações.
+</p>
+
+<pre><code>
+nome = input("Digite seu nome: ")
+
+print(nome)
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Exemplo:</h3>
+
+<pre>
+Digite seu nome: Aline
+Aline
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- ALTERANDO -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Alterando valores</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">
+                        Copiar
+                    </button>
+
+                    <button class="run-btn">
+                        Executar
+                    </button>
+
+                </div>
+
+            </div>
+
+<p class="snippet-explanation">
+* O valor de uma variável pode ser alterado a qualquer momento.
+</p>
+
+<pre><code>
+cidade = "São Paulo"
+
+cidade = "Rio de Janeiro"
+
+print(cidade)
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Saída:</h3>
+
+<pre>
+Rio de Janeiro
+</pre>
+
+            </div>
+
+        </section>
+
+        <!-- TYPE -->
+        <section class="snippet-card">
+
+            <div class="snippet-top">
+
+                <h2>Descobrindo o tipo</h2>
+
+                <div class="code-buttons">
+
+                    <button class="copy-btn">
+                        Copiar
+                    </button>
+
+                    <button class="run-btn">
+                        Executar
+                    </button>
+
+                </div>
+
+            </div>
+
+<p class="snippet-explanation">
+* O comando <strong>type()</strong> mostra o tipo da variável.
+</p>
+
+<pre><code>
+numero = 10
+
+print(type(numero))
+</code></pre>
+
+            <div class="code-output hidden">
+
+                <h3>Saída:</h3>
+
+<pre>
+<class 'int'>
 </pre>
 
             </div>
@@ -314,6 +529,14 @@ True
 
                 <div class="advantage-item">
                     🚀 Excelente para iniciantes
+                </div>
+
+                <div class="advantage-item">
+                    🔤 Strings usam aspas
+                </div>
+
+                <div class="advantage-item">
+                    ✔ Booleanos usam True ou False
                 </div>
 
             </div>
